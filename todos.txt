@@ -1,0 +1,22 @@
+Name + location + email + phone
+  - This would be a form
+
+Client's name + location + (optional = email + phone)
+
+Invoice number - input:text
+
+Invoice date = getCurrentDate(new Date().getTime())
+  - Give option to select another date
+
+Description of items + quantity + unit + price then calculate amount
+  Quantity = user input
+  Price = user input
+  Amount = Price * Quantity
+  Total amount = Sigma(Amount)
+
+Notes area (textarea) - optional
+  - Include optional details e.g. payment details
+
+Preview invoice - give option to edit invoice
+
+Print, Download, Send
