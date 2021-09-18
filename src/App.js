@@ -1,12 +1,10 @@
 import { useState } from "react"
 import {
-  Client,
   Footer,
   Header,
+  InvoiceForm,
   InvoiceDetails,
-  InvoiceNumber,
   Notes,
-  Person,
   SendModal,
 } from "./components"
 
@@ -26,18 +24,16 @@ export default function App() {
   return (
     <>
       <main className="md:max-w-4xl md:mx-auto">
-        <Header
+        {/* <Header
           handlePrint={handlePrint}
           handleDownload={handleDownload}
           handleSend={handleSend}
-        />
+        /> */}
         {showModal && <SendModal setShowModal={setShowModal} />}
-        <Person />
-        <Client />
-        <InvoiceNumber />
-        <InvoiceDetails />
-        <Notes />
-        <Footer />
+        <InvoiceForm />
+        {/* <InvoiceDetails /> */}
+        {/* <Notes /> */}
+        {/* <Footer /> */}
       </main>
     </>
   )
