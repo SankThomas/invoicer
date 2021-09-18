@@ -4,6 +4,7 @@ body {
   font-family: "Tajawal", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f2fffb;
 }
 
 h1,
@@ -20,17 +21,26 @@ h1 {
 }
 
 p {
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 button {
+  font-size: 18px;
   user-select: none;
 }
 
-input {
+label {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+input,
+textarea {
   padding: 10px 20px;
   border-radius: 2px;
-  background-color: hsl(0, 0%, 95%, 40%);
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .send__modal {
