@@ -1,4 +1,10 @@
-export default function InvoiceDetails() {
+export default function InvoiceDetails({
+  itemDesc,
+  items,
+  quantity,
+  price,
+  amount,
+}) {
   return (
     <>
       <section className="mt-10 px-5 lg:px-0">
@@ -11,15 +17,9 @@ export default function InvoiceDetails() {
           </tr>
           <tr>
             <td>Jack</td>
-            <td>3</td>
-            <td>600</td>
-            <td>1800</td>
-          </tr>
-          <tr>
-            <td>Eve</td>
-            <td>4</td>
-            <td>80</td>
-            <td>320</td>
+            <td>{quantity}</td>
+            <td>{price}</td>
+            <td>{amount}</td>
           </tr>
         </table>
 
