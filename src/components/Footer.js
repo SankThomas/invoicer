@@ -1,16 +1,16 @@
-export default function Footer() {
+export default function Footer({ name, address, email, phoneNumber }) {
   return (
     <>
       <footer className="px-5 mt-10 lg:px-0 border-t border-gray-300 pt-5 pb-10">
         <ul className="flex items-center justify-center flex-wrap">
           <li className="font-bold mx-2">
-            Person's name: address <span className="font-light">details</span>
+            {name}: <span className="font-light">{address}</span>
           </li>
           <li className="font-bold mx-2">
-            Email: <span className="font-light">details</span>
+            Email: <span className="font-light">{email}</span>
           </li>
           <li className="font-bold mx-2">
-            Phone: <span className="font-light">details</span>
+            Phone: <span className="font-light">{phoneNumber}</span>
           </li>
           <li className="font-bold mx-2">
             Website: <span className="font-light">details</span>
@@ -22,7 +22,7 @@ export default function Footer() {
             Account Number: <span className="font-light">details</span>
           </li>
           <li className="font-bold mx-2">
-            Account Holder: <span className="font-light">details</span>
+            Account Holder: <span className="font-light">{name}</span>
           </li>
         </ul>
       </footer>
